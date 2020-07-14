@@ -26,32 +26,73 @@
     </ul>
     <h3>Comments</h3>
     <ul>
-      <li>// : commentaire d'une ligne</li>
-      <li>/**/ : commentaire de plusieurs lignes</li>
+      <li>
+        <pre>//</pre>
+        commentaire d'une ligne
+      </li>
+      <li>
+        <pre>/**/</pre>
+        commentaire de plusieurs lignes
+      </li>
     </ul>
     <h3>Output</h3>
     <ul>
-      <li>console.log() : afficher dans la console du navigateur</li>
-      <li>alert() : afficher une box alert, empêcher d'aller plus loin</li>
-      <li>confirm() : afficher une boîte de dialogue (permet de construire une condition, oui/non avec true/false)</li>
-      <li>prompt() : afficher une boîte de dialogue (permet de mettre une fonction à l'intérieur)</li>
+      <li>
+        <pre>console.log()</pre>
+        afficher dans la console du navigateur
+      </li>
+      <li>
+        <pre>alert()</pre>
+        afficher une box alert, empêcher d'aller plus loin
+      </li>
+      <li>
+        <pre>confirm()</pre>
+        afficher une boîte de dialogue (permet de construire une condition,
+        oui/non avec true/false)
+      </li>
+      <li>
+        <pre>prompt()</pre>
+        afficher une boîte de dialogue (permet de mettre une fonction à
+        l'intérieur)
+      </li>
     </ul>
     <h3>Delay</h3>
+    <p><pre>setTimeOut(function(){}, 1000);</pre>délai d'une seconde (1000 milisecondes) avant d'enclencher une action</p>
     <h3>DOM</h3>
+      <h4>Attributs</h4>
+        <ul>
+          <li><pre>.name</pre>retourne le nom de l'élément</li>
+          <li><pre>.value</pre>retourne la valeur de l'élément</li>
+          <li><pre>.lenght</pre>retourne la longueur de l'élément (tableau par exemple)</li>
+        </ul>
+        <h4>Méthodes</h4>
+          <ul>
+            <li><pre>document.addEventListener</pre>attache un "écouteur" d'événement au document (à un bouton par exemple)</li>
+            <li><pre>document.body</pre>retourne le body du document HTML</li>
+            <li><pre>document.createElement("")</pre>crée un nouveau élément</li>
+            <li><pre>document.createTextNode("")</pre>crée un nouveau "noeud" de texte</li>
+            <li><pre>document.getElementById("")</pre>retourne l'élément grâce à son "id"</li>
+        </ul>
     <h2>Les variables</h2>
+    <p>Le nom d'une variable est unique et claire. On utilise le camelCase pour la définir. Le = assigne la variable à une valeur : une chaîne de caractères (""), un nombre, un booléen (true/false), un array (tableau), un objet (avec des propriétés et des valeurs). </p>
     <ul>
-      <li>let</li>
-      <li>const</li>
+      <li><pre>const myName = "Joéllie"</pre></li>
+      <p>déclarer une variable qui ne contiendra qu'une valeur qui ne pourra être accessible seulement si elle précédemment déclarée.</p>
+      <li><pre>let myAge = 29</pre></li>
+      <p>déclarer une variable, mais sans la contrainte d'assignation unique.</p>
     </ul>
     <h3>Types de variables</h3>
     <ol>
-      <li>Chaine de caractère</li>
+      <li>Chaine de caractères</li>
+        <p><pre>const firstName = "Joéllie";</pre>Pour mettre bout à bout deux chaînes de caractère pour en former une nouvelle, on concatène avec un +. Si on souhaite mettre un espace entre, on utilise " ".</p>
       <li>Nombres</li>
+        <p><pre>let myNumber = 245;</pre>On peut faire des <a href="#o-operatorsBlock">opérations</a> sur les nombres.</p>
       <li>Booléen</li>
+        <p><pre></pre></p>
       <li>Tableaux</li>
       <li>Objets</li>
     </ol>
-    <h3>Les opérateurs</h3>
+    <h3 id="o-operatorsBlock">Les opérateurs</h3>
     <h4>Basiques</h4>
     <h4>Comparatifs</h4>
     <h4>Logiques</h4>
