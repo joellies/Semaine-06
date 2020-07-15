@@ -6,6 +6,89 @@
     <link rel="stylesheet" href="style.css" />
     <title>CSS Cheat Sheet</title>
   </head>
-  <body></body>
+  <body onLoad="encodePreElements()">
+    <h1>Cheat Sheet : CSS</h1>
+      <h2>Bases</h2>
+      <div>
+        <p>Anatomie d'une règle CSS</p>
+        <img src="css-anatomy-mdn.svg" alt="anatomie de base d'une règle CSS" />
+      </div>
+      <h2>Sélecteurs</h2>
+        <p>
+          Nom de l'élément HTML sur lequel on veut appliquer la règle CSS. Pour en
+          sélectionner plusieurs qui regroupent les mêmes propriétés, on utilise des
+          ",".
+        </p>
+        <h3>Basiques</h3>
+          <p><a href="https://developer.mozilla.org/fr/docs/Web/CSS/Selector_list">Documentation MDN</a></p>
+          <h4>Sélecteur de type</h4>
+          <ul>
+            <li>div {}</li>
+            <li>span {}</li>
+            <li>p {}</li>
+            <li>a {}</li>
+            <li>table {}</li>
+            <li>etc.</li>
+          </ul>
+          <h4>Sélecteur de classe, d'identifiant et d'attributs</h4>
+          <ul>
+            <li><pre>.important {}</pre></li>
+            <li><pre>#important {}</pre></li>
+            <li><pre>div .important {}</pre></li>
+            <li><pre>input[type="valeur"] {}</pre></li>
+            <li><pre>p #attribut * {}</pre></li>
+          </ul>
+        <h3>Combinateurs</h3>
+        <ul>
+          <li>div + p {} permet de sélectionner les p qui suivent la div</li>
+          <li>
+            p ~ span {} permet de sélectionner les span qui ont le même parent
+          </li>
+          <li>
+            ul > li {} permet de sélectionner tous les li enfants directs de ul
+          </li>
+          <li>
+            div p {} permet de sélectionner tous les descendants p (pas
+            nécessairement directs) de div.
+          </li>
+          <li>
+            col || td {} permet de sélectionner n'importe quel élément td dans une
+            colonne col.
+          </li>
+        </ul>
+        <h3>Pseudo-éléments</h3>
+          <a href="https://developer.mozilla.org/fr/docs/Web/CSS/Pseudo-%C3%A9l%C3%A9ments">Documentation MDN</a>
+          <p>Permet de mettre en forme seulement certains éléments du sélecteur.</p>
+          <p>Syntaxe<pre>sélecteur ::pseudo-élément {propriété : valeur};</pre></p>
+          <ul>
+            <li><pre>.class::after</pre></li>
+            <li><pre>#id::before</pre></li>
+            <li><pre>p::first-letter</pre></li>
+            <li><pre>p::first-line</pre></li>
+            <li><pre>::placeholder</pre></li>
+          </ul>
+        <h3>Pseudo-classes</h3>
+          <a href="https://developer.mozilla.org/fr/docs/Web/CSS/Pseudo-classes">Documentation MDN</a>
+          <p>Permet de sélectionner les éléments selon l'état que l'on souhaite attribuer (quand on passe la souris dessus par exemple).</p>
+          <ul>
+            <li><pre>a:active</pre></li>
+            <li><pre>div:first-child</pre></li>
+            <li><pre>p:first-of-type</pre></li>
+            <li><pre>input:focus</pre></li>
+            <li><pre>a:hover</pre></li>
+            <li><pre>:last-child</pre></li>
+            <li><pre>:last-of-type</pre></li>
+            <li><pre>:nth-child(an+b)</pre></li>
+            <li><pre>:nth-last-child(an+b)</pre></li>
+            <li><pre>:nth-last-of-type(an+b)</pre></li>
+            <li><pre>:nth-of-type (an+b)</pre></li>
+            <li><pre>:only-child</pre></li>
+            <li><pre>:only-of-type</pre></li>
+            <li><pre>a:visited</pre></li>
+            <li>etc.</li>
+          </ul>
+      <h2>Styliser le texte</h2>
+      <h2></h2>
+  </body>
   <script src="script.js"></script>
 </html>
