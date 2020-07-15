@@ -4,24 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <title>CSS Cheat Sheet</title>
   </head>
   <body onLoad="encodePreElements()">
+    <nav class="m-nav__cssCheatSheet">
+      <a href="#cssBase">Bases</a>
+      <a href="#selecteurs">Sélecteurs</a>
+      <a href="#fontsStyle">Fonts & style</a>
+      <a href="#"></a>
+      <a href="#"></a>
+    </nav>
     <h1>Cheat Sheet : CSS</h1>
-      <h2>Bases</h2>
+      <h2 id="cssBase">Bases</h2>
       <div>
         <p>Anatomie d'une règle CSS</p>
         <img src="css-anatomy-mdn.svg" alt="anatomie de base d'une règle CSS" />
       </div>
-      <h2>Sélecteurs</h2>
+      <h2 id="selecteurs">Sélecteurs</h2>
         <p>
           Nom de l'élément HTML sur lequel on veut appliquer la règle CSS. Pour en
           sélectionner plusieurs qui regroupent les mêmes propriétés, on utilise des
           ",".
         </p>
-        <h3>Basiques</h3>
+        <h3 id="selecteurs_base">Basiques</h3>
           <p><a href="https://developer.mozilla.org/fr/docs/Web/CSS/Selector_list">Documentation MDN</a></p>
-          <h4>Sélecteur de type</h4>
+          <h4 id="selecteurs_baseType">Sélecteur de type</h4>
           <ul>
             <li>div {}</li>
             <li>span {}</li>
@@ -38,7 +46,7 @@
             <li><pre>input[type="valeur"] {}</pre></li>
             <li><pre>p #attribut * {}</pre></li>
           </ul>
-        <h3>Combinateurs</h3>
+        <h3 id="selecteurs_combinateurs">Combinateurs</h3>
         <ul>
           <li>div + p {} permet de sélectionner les p qui suivent la div</li>
           <li>
@@ -56,7 +64,7 @@
             colonne col.
           </li>
         </ul>
-        <h3>Pseudo-éléments</h3>
+        <h3 id="selecteurs_pseudoElements">Pseudo-éléments</h3>
           <a href="https://developer.mozilla.org/fr/docs/Web/CSS/Pseudo-%C3%A9l%C3%A9ments">Documentation MDN</a>
           <p>Permet de mettre en forme seulement certains éléments du sélecteur.</p>
           <p>Syntaxe<pre>sélecteur ::pseudo-élément {propriété : valeur};</pre></p>
@@ -67,7 +75,7 @@
             <li><pre>p::first-line</pre></li>
             <li><pre>::placeholder</pre></li>
           </ul>
-        <h3>Pseudo-classes</h3>
+        <h3 id="selecteurs_pseudoClasses">Pseudo-classes</h3>
           <a href="https://developer.mozilla.org/fr/docs/Web/CSS/Pseudo-classes">Documentation MDN</a>
           <p>Permet de sélectionner les éléments selon l'état que l'on souhaite attribuer (quand on passe la souris dessus par exemple).</p>
           <ul>
@@ -87,8 +95,28 @@
             <li><pre>a:visited</pre></li>
             <li>etc.</li>
           </ul>
-      <h2>Styliser le texte</h2>
-      <h2></h2>
+      <h2 id="o-fontsStyle">Fonts & style</h2>
+      <p>Propriétés des fonts sur la <a href="https://developer.mozilla.org/fr/docs/Web/CSS/font">MDN</a></p>
+        <ul>
+          <li class="a-fontStyle_fontFamily">font-family : Montserrat, sans cursif,</li>
+          <li class="a-fontStyle_fontSize">font-size : 10</li>
+          <li class="a-fontStylle_letterSpacing">letter-spacing : 2px</li>
+          <li class="a-fontStyle_lineHeight">line-height : 25px</li>
+          <li>font-style : normal / <span class="a-fontStyle_italic">italic</span> / <span class="a-fontStyle_oblique">oblique</span></li>
+          <li>font-weight : <span class="a-fontStyle_bold">bold</span> / normal</li>
+          <li>text-decoration : underline / overline / dotted / line-through / ...</li>
+          <li class="a-fontStyle_alignLeft">text-align : left</li>
+          <li class="a-fontStyle_alignRight">text-align : right</li>
+          <li class="a-fontStyle_alignCenter">text-align : center</li>
+          <li class="a-fontStyle_alignJustify">text-align : justify</li>
+          <span>text-transform : <span class="a-fontStyle_capitalize">capitalize</span> / <span class ="m-fontStyle_uppercase">uppercase</span> / <span class="a-fontStyle_lowercase"></span>lowercase</span></li>
+          <li class="a-fontStyle_backgroundColor">background-color : lightblue</pre></li>
+          <li>etc.</li>
+        </ul>
+      <h2>Images & Background</h2>
+      <ul>
+        <li><pre></pre></li>
+      </ul>
   </body>
   <script src="script.js"></script>
 </html>

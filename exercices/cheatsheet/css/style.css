@@ -1,0 +1,47 @@
+/*Fonts & style*/
+
+.a-fontStyle_fontFamily {
+  font-family: Montserrat, sans cursif;
+}
+.a-fontStyle_fontSize {
+  font-size: 10;
+}
+.a-fontStylle_letterSpacing {
+  letter-spacing: 2px;
+}
+.a-fontStyle_lineHeight {
+  line-height: 25px;
+}
+.a-fontStyle_italic {
+  font-style: italic;
+}
+.a-fontStyle_oblique {
+  font-style: oblique;
+}
+.a-fontStyle_bold {
+  font-weight: bold;
+}
+.a-fontStyle_alignLeft {
+  text-align: left;
+}
+.m-fontStyle_alignRight {
+  text-align: right;
+}
+.a-fontStyle_alignCenter {
+  text-align: center;
+}
+.a-fontStyle_alignJustify {
+  text-align: justify;
+}
+.a-fontStyle_capitalize {
+  text-transform: capitalize;
+}
+.a-fontStyle_uppercase {
+  text-transform: uppercase;
+}
+.a-fontStyle_lowercase {
+  text-transform: lowercase;
+}
+.a-fontStyle_backgroundColor {
+  background-color: lightblue;
+}
