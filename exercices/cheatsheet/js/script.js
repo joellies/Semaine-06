@@ -12,3 +12,6 @@ function htmlEncode(value) {
   div.appendChild(text);
   return div.innerHTML;
 }
+
+let howAreYou = prompt('Hi ! How are you ?');
+window.alert('Thanx for sharing');
