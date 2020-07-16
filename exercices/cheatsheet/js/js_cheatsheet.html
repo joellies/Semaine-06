@@ -7,11 +7,18 @@
     <title>Javascript Cheat Sheet</title>
   </head>
   <body>
-    <header></header>
+    <header>
+        <a href="#bases">Bases</a>
+        <a href="#variables">Variables</a>
+        <a href="#functions">Fonctions</a>
+        <a href="#methods">Méthodes</a>
+        <a href="#conditions">Conditions</a>
+      </nav>
+    </header>
     <div class="a-javascriptTitle">
       <h1>Cheat Sheet : Javascript</h1>
     </div>
-    <h2>Les bases</h2>
+    <h2>Bases</h2>
     <h3>Où placer le code Javascript</h3>
     <ul>
       <li>
@@ -42,16 +49,18 @@
         afficher dans la console du navigateur
       </li>
       <li>
-        <pre>alert()</pre>
+        <pre>window.alert("résultat de ma fonction")</pre>
         afficher une box alert, empêcher d'aller plus loin
       </li>
       <li>
-        <pre>confirm()</pre>
+        <pre>if(window.confirm("Une nouvelle fenêtre va s'ouvrir")){
+          window.open("contact.html", "Vous êtes redirigé vers la page de contact");
+      }</pre>
         afficher une boîte de dialogue (permet de construire une condition,
         oui/non avec true/false)
       </li>
       <li>
-        <pre>prompt()</pre>
+        <pre>window.prompt("What's your name ?", "Joéllie")</pre>
         afficher une boîte de dialogue (permet de mettre une fonction à
         l'intérieur)
       </li>
@@ -65,15 +74,7 @@
           <li><pre>.value</pre>retourne la valeur de l'élément</li>
           <li><pre>.lenght</pre>retourne la longueur de l'élément (tableau par exemple)</li>
         </ul>
-        <h4>Méthodes</h4>
-          <ul>
-            <li><pre>document.addEventListener</pre>attache un "écouteur" d'événement au document (à un bouton par exemple)</li>
-            <li><pre>document.body</pre>retourne le body du document HTML</li>
-            <li><pre>document.createElement("")</pre>crée un nouveau élément</li>
-            <li><pre>document.createTextNode("")</pre>crée un nouveau "noeud" de texte</li>
-            <li><pre>document.getElementById("")</pre>retourne l'élément grâce à son "id"</li>
-        </ul>
-    <h2>Les variables</h2>
+    <h2>Variables</h2>
     <p>Le nom d'une variable est unique et claire. On utilise le camelCase pour la définir. Le = assigne la variable à une valeur : une chaîne de caractères (""), un nombre, un booléen (true/false), un array (tableau), un objet (avec des propriétés et des valeurs). </p>
     <ul>
       <li><pre>const myName = "Joéllie"</pre></li>
@@ -88,14 +89,157 @@
       <li>Nombres</li>
         <p><pre>let myNumber = 245;</pre>On peut faire des <a href="#o-operatorsBlock">opérations</a> sur les nombres.</p>
       <li>Booléen</li>
-        <p><pre></pre></p>
+      <pre>let isConnected = new Boolean([valeur]);
+        if (isConnected) {window.alert("Hello you !")};
+          else{window.alert("Let's get connected !")};
+      </pre>
       <li>Tableaux</li>
+      <pre>let myArray = ["Joéllie", "Natascha", "Yana", "Rachel", "Nathalie", "Julie"];
+        console.log(myArray);
+        console.log(myArray[2]);
+        console.log(myArray.lenght)
+      </pre>
       <li>Objets</li>
+      <p>La documentation sur la <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux">MDN</a></p>
+      <pre>let myDog = {
+        nom: "Poupi",
+        age: 11,
+        race: "jack russel",
+        color: "white"
+      };
+      console.log(myDog.nom);</pre>
     </ol>
-    <h3 id="o-operatorsBlock">Les opérateurs</h3>
-    <h4>Basiques</h4>
-    <h4>Comparatifs</h4>
-    <h4>Logiques</h4>
+    <h3 id="o-operatorsBlock">Opérateurs</h3>
+      <ul>
+        <li>+ addition</li>
+        <li>- soustraction</li>
+        <li>* multiplication</li>
+        <li>/ division</li>
+        <li>= affectation</li>
+        <li>% modulo</li>
+        <li>< plus petit que</li>
+        <li>> plus grand que</li>
+        <li>>= plus grand ou égal à</li>
+        <li><= plus petit ou égal à</li>
+        <li>++ incrémentation (+1)</li>
+        <li>-- décrémentation (-1)</li>
+        <li>|| ou</li>
+        <li>&& et</li>
+        <li>=== strictement égal à</li>
+        <li>== égal à</li>
+        <li>!== strictement différent de</li>
+        <li>!= différent de</li>
+        <li>+= affectation après addition</li>
+        <li>-= affectation après soustraction</li>
+        <li>/= affectation après division</li>
+        <li>*= affectation après multiplication</li>
+      </ul>
+      <h2 id="functions">Fonctions</h2>
+      <p>La documentation sur la <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Fonctions">MDN</a></p>
+      <p>Une fonction est un ensemble d'instructions menant à la réalisation d'une tâche, c'est un bloc de code réutilisable. Elle contient un constructeur () qui peut recevoir un ou plusieurs paramètres (,) et les instructions à executer englobées via {}.</p>
+        <pre>(param1, param2, …) => {
+          return expression;
+        }</pre>
+        <p>On peut la déclarer via le mot-clé function ou via la fat arrow function.</p>
+        <pre>([param] [, param]) => {
+          instructions
+       }
+       </pre>
+       <p>Une fonction sans paramètres</p>
+       <pre>() => {
+          instructions
+        }</pre>
+       Il ne faut pas oublier d'appeler la fonction</p>
+       <pre>nom()</pre>
+       <h2 id="methods">Méthodes</h2>
+       <p>La documentation sur la <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Fonctions/D%C3%A9finition_de_m%C3%A9thode">MDN</a></p>
+       <p>Une fonction utilisée sur un objet est appéllé méthode.</p>
+         <ul>
+           <li><pre>document.addEventListener</pre></li>
+           <li><pre>document.body</pre></li>
+           <li><pre>document.createElement("")</pre></li>
+           <li><pre>document.createTextNode("text")</pre></li>
+           <li><pre>document.getElementById("Id")</pre></li>
+           <li><pre>document.getElementByClassName("className");</pre></li>
+           <li><pre>document.getElementByTagName("p");</pre></li>
+           <li><pre>document.getElementByName("elementName");</pre></li>
+           <li><pre>Math.floor() renvoie un nombre entier qui est plus petit ou égal au nombre passé en paramètre </pre></li>
+           <li><pre>Math.random() renvoie un chiffre avec une décimale, compris entre 0 et le chiffre donné en paramètre </pre></li>
+           <li><pre>Math.floor(Math.floor() * Math.random(nbr)) renvoie un chiffre aléatoire entier</pre></li>
+           <li><pre>parseInt("14", 10);(strings > nombre entier)</pre></li>
+           <li><pre>parseFloat("3.14", 10);(strings > nombre décimal)</pre></li>
+           <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date">Date()</a></li>
+       </ul>
+       <h3>Méthode fetch()</h3>
+        <p>La documentation sur la <a href="https://developer.mozilla.org/fr/docs/Web/API/Fetch_API/Using_Fetch">MDN</a></p>
+        <pre>fetch("http://l-url-de-la-requete.com/")
+          .then(response => {
+            console.log(response)
+            return response.json();
+          })
+          .then(response => {
+            let data = response
+          document.getElementById("text").textContent = data.text
+          });</pre>
+        <h4>fetch() GET</h4>
+          <pre>fetch("l-url-de-mon-api", {method: "GET"})
+            .then(response => {
+              return response.json();
+            })
+            .then(response => {
+              let data = response;
+              data.forEach(element => {
+                let newDiv = document.createElement("div");
+                let newContent = document.createTextNode(element.valeur)
+                newDiv.appendChild(newContent);
+                let currentDiv = document.getElementById("insert");
+                document.body.insertBefore(newDiv, currentDiv.nextElementSibling)
+              })
+            })</pre>
+      <h4>fetch() POST</h4>
+      <pre>let myHeaders = new Headers({"Content-Type": "application/json"})
+        let form = document.getElementById("my-form");
+        document.getElementById("submit-btn").addEventListener("click", () => {
+          let variable1 = document.getElementById("clé1").value;
+          let variable2 = document.getElementById("clé2").value;
+          let body = {
+            "clé1": valeur1,
+            "clé2":valeur2
+          };
+          fetch("l'url-de-mon-api", {
+            method: "POST",
+              headers: myHeaders,
+              body: JSON.stringify(body)
+          })
+        })</pre>
+      <h2 id="conditions">Conditions</h2>
+        <p>La documentation sur la <a href="">MDN</a></p>
+        <p>Les conditions utilisent les opérateurs de comparaison (<, >, <=, >=, ===, !==...) et les opérateurs logiques (&&, ||, !) pour aider à prendre une décision en fonction des paramètres qui  sont fournis.</p>
+        <pre>if(condition){instructions pour le code à exécuter};</pre>
+        <pre>const isMailSent = true ;
+          if (isMailSent){console.log("Mail sent to recipient")}
+        </pre>
+        <pre>if (false){console.log("Ce code ne fonctionnera pas")};
+          else {console.log("Mais ce code dans ce bloc fonctionnera");}
+        </pre>
+        <pre>if (season === "summer"){console.log("It's summer")}
+          else if (season === "fall"){console.log("It's fall")}
+          else if (season === "winter"){console.log("It's winter")}
+          else if (season === "spring"){console.log("It's spring")}
+          else {console.log("Invalid season")}
+        </pre>
+        <pre>let siriusTeamArray = ["Jeremy","Christophe","Julie","Laetitia","David","Vincent"];
+          switch (siriusTeamArray[0]) {
+            case "Jeremy":
+              console.log("Salut Jeremy")
+              break;
+            case "Christophe":
+              console.log("Salut Christophe")
+              break;
+          </pre>
+        <pre>is nightTime ? console.log("Turn on the lights") : console.log("Turn off the lights");</pre>
+      <h2>Boucles</h2>
+        <p>La documentation sur la <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Boucles_et_it%C3%A9ration">MDN</a></p>
   </body>
   <script src="script.js"></script>
 </html>
