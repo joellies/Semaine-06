@@ -1,3 +1,73 @@
+body {
+  width: 100%;
+  font-family: Raleway, sans serif;
+  margin-left: 30px;
+}
+
+p {
+  font-family: Raleway, sans serif;
+}
+/*Nav*/
+
+.m-nav__cssCheatSheet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Monserrat, sans-serif;
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #f3e8ee;
+  overflow-x: hidden;
+}
+
+.m-nav__cssCheatSheet a {
+  color: #01676b;
+  padding: 8px 8px 8px 8px;
+  text-decoration: none;
+  font-size: 20;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #f3e8ee;
+  transition: 0.4s;
+}
+
+.m-nav__cssCheatSheet a:hover {
+  color: #ca2e55;
+}
+
+/*Titres*/
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: Montserrat, sans serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 40px;
+  color: #01676b;
+}
+
+.a-title__CSS {
+  background-color: #ca2e55;
+  color: #f3e8ee;
+  padding: 8px;
+}
+
+.m-title__CSS {
+  margin-top: 40px;
+  margin-left: 20px;
+  padding: 20px;
+}
+
 /*Fonts & style*/
 
 .a-fontStyle_fontFamily {

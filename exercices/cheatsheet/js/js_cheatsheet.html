@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Javascript Cheat Sheet</title>
   </head>
   <body>
     <header>
+      <nav class="m-nav__jsCheatSheet">
         <a href="#bases">Bases</a>
         <a href="#variables">Variables</a>
         <a href="#functions">Fonctions</a>
@@ -15,65 +17,80 @@
         <a href="#conditions">Conditions</a>
       </nav>
     </header>
-    <div class="a-javascriptTitle">
-      <h1>Cheat Sheet : Javascript</h1>
+    <div class="m-title__js">
+      <h1>Cheat Sheet : <span class="a-title__js">Javascript</h1></span>
     </div>
-    <h2>Bases</h2>
-    <h3>Où placer le code Javascript</h3>
-    <ul>
-      <li>
-        Si le document script.js est une feuille à part, on va dans le document
-        HTML et on place la balise script src="" entre la balise fermante du
-        body et celle de l'html.
-      </li>
-      <li>
-        Si on veut mettre le script dans l'html, on met une balise script type
-        ="text/javascript" dans le document html.
-      </li>
-    </ul>
-    <h3>Comments</h3>
-    <ul>
-      <li>
-        <pre>//</pre>
-        commentaire d'une ligne
-      </li>
-      <li>
-        <pre>/**/</pre>
-        commentaire de plusieurs lignes
-      </li>
-    </ul>
-    <h3>Output</h3>
-    <ul>
-      <li>
-        <pre>console.log()</pre>
-        afficher dans la console du navigateur
-      </li>
-      <li>
-        <pre>window.alert("résultat de ma fonction")</pre>
-        afficher une box alert, empêcher d'aller plus loin
-      </li>
-      <li>
-        <pre>if(window.confirm("Une nouvelle fenêtre va s'ouvrir")){
-          window.open("contact.html", "Vous êtes redirigé vers la page de contact");
-      }</pre>
-        afficher une boîte de dialogue (permet de construire une condition,
-        oui/non avec true/false)
-      </li>
-      <li>
-        <pre>window.prompt("What's your name ?", "Joéllie")</pre>
-        afficher une boîte de dialogue (permet de mettre une fonction à
-        l'intérieur)
-      </li>
-    </ul>
-    <h3>Delay</h3>
-    <p><pre>setTimeOut(function(){}, 1000);</pre>délai d'une seconde (1000 milisecondes) avant d'enclencher une action</p>
-    <h3>DOM</h3>
-      <h4>Attributs</h4>
-        <ul>
-          <li><pre>.name</pre>retourne le nom de l'élément</li>
-          <li><pre>.value</pre>retourne la valeur de l'élément</li>
-          <li><pre>.lenght</pre>retourne la longueur de l'élément (tableau par exemple)</li>
-        </ul>
+
+      <div class="a-basesJavascript">
+        <h2>Bases</h2>
+      </div>
+      <div class="o-basesJavascript">
+        <div class="m-bases__where">
+          <h3>Où placer le code Javascript</h3>
+          <ul>
+            <li>
+              Si le document script.js est une feuille à part, on va dans le document
+              HTML et on place la balise script src="" entre la balise fermante du
+              body et celle de l'html.
+            </li>
+            <li>
+              Si on veut mettre le script dans l'html, on met une balise script type
+              ="text/javascript" dans le document html.
+            </li>
+          </ul>
+        </div>
+      <div class="m-bases__comments">
+        <h3>Comments</h3>
+          <ul>
+            <li>
+              <pre>//</pre>
+              commentaire d'une ligne
+            </li>
+            <li>
+              <pre>/**/</pre>
+              commentaire de plusieurs lignes
+            </li>
+          </ul>
+      </div>
+      <div class="m-bases__output">
+        <h3>Output</h3>
+          <ul>
+            <li>
+              <pre>console.log()</pre>
+              afficher dans la console du navigateur
+            </li>
+            <li>
+              <pre>window.alert("résultat de ma fonction")</pre>
+              afficher une box alert, empêcher d'aller plus loin
+            </li>
+            <li>
+              <pre>if(window.confirm("Une nouvelle fenêtre va s'ouvrir")){
+                window.open("contact.html", "Vous êtes redirigé vers la page de contact");
+            }</pre>
+              afficher une boîte de dialogue (permet de construire une condition,
+              oui/non avec true/false)
+            </li>
+            <li>
+              <pre>window.prompt("What's your name ?", "Joéllie")</pre>
+              afficher une boîte de dialogue (permet de mettre une fonction à
+              l'intérieur)
+            </li>
+          </ul>
+      </div>
+      <div class="m-bases__delay">
+        <h3>Delay</h3>
+          <p><pre>setTimeOut(function(){}, 1000);</pre>délai d'une seconde (1000 milisecondes) avant d'enclencher une action</p>
+      </div>
+      <div class="m-bases__dom">
+        <h3>DOM</h3>
+          <h4>Attributs</h4>
+            <ul>
+              <li><pre>.name</pre>retourne le nom de l'élément</li>
+              <li><pre>.value</pre>retourne la valeur de l'élément</li>
+              <li><pre>.lenght</pre>retourne la longueur de l'élément (tableau par exemple)</li>
+            </ul>
+      </div>
+      </div>
     <h2>Variables</h2>
     <p>Le nom d'une variable est unique et claire. On utilise le camelCase pour la définir. Le = assigne la variable à une valeur : une chaîne de caractères (""), un nombre, un booléen (true/false), un array (tableau), un objet (avec des propriétés et des valeurs). </p>
     <ul>

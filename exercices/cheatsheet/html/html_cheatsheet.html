@@ -4,17 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
     <title>HTML5 Cheat Sheet</title>
   </head>
   <body onLoad="encodePreElements()">
     <nav class="m-nav_htmlCheatSheet">
-      <a href="#structure-base">Structure de base</a>
-      <a href="#balises">Balises</a>
-      <a href="#balises-table">Tableaux</a>
-      <a href="#balises-form">Formulaires</a>
+      <a href="#o-home__html">Home</a>
+      <a href="#o-structureBase">Structure de base</a>
+      <a href="#o-balises">Balises</a>
+      <a href="#o-balisesTable">Tableaux</a>
+      <a href="#o-balisesForm">Formulaires</a>
     </nav>
-      <h1>Cheat Sheet : HTML5</h1>
-      <h2 id="structure-base">Structure de base d'une page web</h2>
+    <div class="m-title__html">
+      <h1 id="o-home__html">Cheat Sheet : <span class="a-title__html">HTML5</span></h1>
+    </div>
+        <h2 id="o-structureBase">Structure de base d'une page web</h2>
     </div>
     <h3>Pour commencer</h3>
       <table class="o-table">
@@ -55,7 +59,7 @@
           <td>corps de la page</td>
         </tr>
       </table>
-    <h3 id="balises">Balises</h3>
+    <h3 id="o-balises">Balises</h3>
       <h4 id="balises-non-semantiques">Non sémantiques</h4>
         <ol>
           <li><pre><div></pre>conteneur générique pour diviser du contenu, on peut lui appliquer une "class" (.class en CSS) ou un id (# en CSS)
@@ -95,7 +99,7 @@
         <li>Unordoned<pre><ul><li></li></ul></pre></li>
         <li>Ordoned<pre><ol><li></li></ol></pre></li>
       </ol>
-      <h4 id="balises-table">Tableaux</h4>
+      <h4 id="o-balisesTable">Tableaux</h4>
       <div class="o-table">
         <div class="m-tableExemple">
           <p>La documentation sur la <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/table">MDN</a></p>
@@ -133,7 +137,7 @@
           </pre>
         </div>
       </div>
-      <h4 id="balises-form">Formulaires</h4>
+      <h4 id="o-balisesForm">Formulaires</h4>
       <p>La documentation sur la <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/Form">MDN</a></p>
         <div class="o-formExemple">
         <form method="POST">
@@ -167,7 +171,6 @@
                 <label for="email">E-mail</label>
                 <input type="email" name="email" id="name" required>
               </div>
-              <label for=""
               <div class="m-formExemple__comment">
                 <label for="comment">Comment</label>
                 <textarea name="comment" id="comment" rows="5" cols="15" required></textarea>
