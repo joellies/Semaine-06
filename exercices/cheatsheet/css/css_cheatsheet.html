@@ -16,7 +16,7 @@
       <a href="#o-basesCSS">Bases</a>
       <a href="#o-selecteurs">Sélecteurs</a>
       <a href="#o-fontsImages">Fonts & style</a>
-      <a href="#o-imagesBackgrounds">Images & Backgrounds</a>
+      <a href="#o-imagesBackgrounds">Images</a>
       <a href="#o-positionnement">Positionnement</a>
     </nav>
     <div class="m-title__CSS">
@@ -266,14 +266,47 @@ background-repeat : repeat / no-repeat / repeat-x / repeat-y</pre
       </div>
       <div class="o-flexGrid">
         <div class="o-flex">
-          <h3>Flexbox</h3>
-          <p>
-            Documentation
-            <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">
-              Flexbox
-            </a>
-          </p>
-          <img src="flexbox-cheatsheet.jpg" width="30%" />
+          <div class="m-flexBases">
+            <h3>Flexbox</h3>
+            <p>
+              Documentation
+              <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">
+                Flexbox
+              </a> et <a href="http://flexbox.buildwithreact.com/">online builder</a>
+            </p>
+            <img src="flexbox-cheatsheet.jpg" width="70%" />
+          </div>
+          <div class="m-flexPropriétés">
+            <p><strong>Propriétés</strong></p>
+            <ul>
+              <li>
+                <pre>
+flex-direction : row | row-reverse | column | column-reverse</pre
+                >
+              </li>
+              <li><pre>flex-wrap : wrap | no-wrap | wrap-reverse</pre></li>
+              <li><pre>flex-flow : flex-direction flex-wrap</pre></li>
+              <li>
+                <pre>
+justify-content (axe principal) : flex-start | flex-end | center | space-between | space-around | space-evenly</pre
+                >
+              </li>
+              <li>
+                <pre>
+align-items (axe secondaire) : flex-start | flex-end | center | baseline | stretch</pre
+                >
+              </li>
+              <li><pre>order (1 en bas, 10 au-dessus)</pre></li>
+              <li><pre>flex-grow : s’étire dans l’espace restant</pre></li>
+              <li><pre>flex-shrink : se contracte si nécessaire</pre></li>
+              <li>
+                <pre>
+flex-basis : taille initiale de l’élément avant que l’espace restant ne soit distribué</pre
+                >
+              </li>
+              <li><pre>flex : grow shrink basis</pre></li>
+            </ul>
+          </div>
         </div>
         <div class="o-grid">
           <h3>Grid</h3>
@@ -281,7 +314,7 @@ background-repeat : repeat / no-repeat / repeat-x / repeat-y</pre
             Documentation
             <a href="https://css-tricks.com/snippets/css/complete-guide-grid/">
               Grid
-            </a>
+            </a> et <a href="https://grid.layoutit.com/">online builder</a>
           </p>
           <img src="grid-cheatsheet.jpg" width="70%" />
         </div>

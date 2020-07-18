@@ -254,6 +254,24 @@ li.alignJustify {
   width: 50%;
 }
 
+.o-flex {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+}
+
+.m-flexBases {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.m-flexPropriétés {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-top: 57px;
+}
 /*Liens*/
 
 a {
