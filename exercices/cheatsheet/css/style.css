@@ -13,7 +13,7 @@ body {
   align-items: center;
   font-family: Monserrat, sans-serif;
   height: 100%;
-  width: 10%;
+  width: 15%;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -69,15 +69,71 @@ h1 {
 }
 
 /*Bases CSS*/
+.o-selecteurs div {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
 
-.o-selecteurs {
+.o-selecteursBasiques {
   display: flex;
   flex-direction: row;
-  width: 85%;
   flex-wrap: wrap;
 }
 
-/*Fonts & style*/
+.m-selecteursTypes {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.m-selecteursCIA {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.o-combinateurs {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.o-elementsClasses {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 90%;
+  margin-top: 50px;
+}
+
+.o-elements {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-right: 40px;
+}
+
+.o-classes {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+}
+
+/*Fonts & style & Images*/
+
+#o-fontsImages {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+  margin-top: 30px;
+}
+.o-fontsStyle {
+  width: 30%;
+  margin-right: 40px;
+}
+
+.o-images {
+  width: 65%;
+}
 
 p {
   font-family: Raleway, sans serif;
@@ -86,50 +142,126 @@ p {
 pre {
   white-space: pre-wrap;
   font-weight: bold;
+  color: #ca2e55;
 }
 
-.a-fontStyle_fontFamily {
+ul {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+li {
+  line-height: 2em;
+}
+
+ul li:nth-child(even) {
+  background-color: #dcf9e8;
+  width: fit-content;
+}
+
+.important {
+  color: white;
+  background-color: #01676b;
+}
+
+.fontFamily {
   font-family: Montserrat, sans cursif;
 }
-.a-fontStyle_fontSize {
+.fontSize {
   font-size: 10;
 }
-.a-fontStylle_letterSpacing {
+.letterSpacing {
   letter-spacing: 2px;
 }
-.a-fontStyle_lineHeight {
+.lineHeight {
   line-height: 25px;
 }
-.a-fontStyle_italic {
+.italic {
   font-style: italic;
 }
-.a-fontStyle_oblique {
+.oblique {
   font-style: oblique;
 }
-.a-fontStyle_bold {
+.bold {
   font-weight: bold;
 }
-.a-fontStyle_alignLeft {
+.alignLeft {
   text-align: left;
 }
-.m-fontStyle_alignRight {
+.alignRight {
   text-align: right;
 }
-.a-fontStyle_alignCenter {
+li.alignCenter {
   text-align: center;
 }
-.a-fontStyle_alignJustify {
+li.alignJustify {
   text-align: justify;
 }
-.a-fontStyle_capitalize {
+.capitalize {
   text-transform: capitalize;
 }
-.a-fontStyle_uppercase {
+.uppercase {
   text-transform: uppercase;
 }
-.a-fontStyle_lowercase {
+.lowercase {
   text-transform: lowercase;
 }
-.a-fontStyle_backgroundColor {
-  background-color: lightblue;
+.backgroundColor {
+  background-color: pink;
+}
+
+.underlined {
+  text-decoration: underline;
+}
+
+.border {
+  border: 2px solid black;
+}
+
+.borderRadius {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.margin {
+  margin: 20px;
+  border: solid black 1px;
+}
+
+.padding {
+  padding: 15px;
+  border: solid black 1px;
+}
+
+/*Positionnement*/
+
+#o-positionnement,
+.o-float,
+.o-display,
+.o-position .o-flex,
+.o-grid {
+  margin-top: 30px;
+}
+
+.o-floatDisplay {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+}
+
+.o-float {
+  width: 50%;
+}
+
+/*Liens*/
+
+a {
+  transition: 0.5s;
+  font-weight: 700;
+  color: #01676b;
+  text-decoration: underline #01676b;
+}
+a:hover {
+  background-color: #f3e8ee;
 }
