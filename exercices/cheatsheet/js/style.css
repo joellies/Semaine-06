@@ -1,7 +1,7 @@
 body {
   width: 90%;
   font-family: Raleway, sans serif;
-  margin-left: 30px;
+  margin-left: 40px;
 }
 
 /*Nav*/
@@ -45,25 +45,28 @@ h2,
 h3,
 h4 {
   font-family: Montserrat, sans serif;
-  margin-top: 20px;
+  margin-top: 20x;
   margin-bottom: 10px;
 }
 
 h1 {
   font-size: 40px;
   color: #01676b;
+  margin-top: 30px;
+  margin-left: 10px;
 }
 
 .a-title__js {
   background-color: #ca2e55;
   color: #f3e8ee;
-  padding: 8px;
+  padding: 10px;
 }
 
 .m-title__js {
-  margin-top: 40px;
-  margin-left: 20px;
-  padding: 20px;
+  height: 200px;
+  margin-top: 100px;
+  background-color: #f3e8ee;
+  width: 900px;
 }
 
 /*Bases Javascript*/
@@ -80,14 +83,21 @@ h1 {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-.m-bases__where {
-  width: 45%;
-  margin-right: 30px;
+.a-basesJavascript {
+  margin-top: 20px;
+}
+.m-bases__where,
+.m-bases__output {
+  width: 50%;
+  margin-right: 50px;
 }
 
-.m-bases__comments {
+.m-bases__comments,
+.m-bases__dom {
   width: 45%;
 }
 
@@ -101,6 +111,36 @@ li {
   line-height: 1.5em;
 }
 
+.m-operatorsList li:nth-child(even) {
+  background-color: #dcf9e8;
+  width: fit-content;
+}
+
+.m-methodsList li:nth-child(even) {
+  background-color: #dcf9e8;
+  width: fit-content;
+}
+
+.o-variablesList li {
+  font-weight: 700;
+}
+/*Codes*/
+
 pre {
   white-space: pre-wrap;
+  color: #01676b;
+  font-weight: bold;
+}
+
+/*textes*/
+
+p {
+  line-height: 1.5em;
+  max-width: 70%;
+}
+
+.important {
+  background-color: #ca2e55;
+  color: white;
+  padding: 5px;
 }

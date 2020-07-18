@@ -1,12 +1,9 @@
 body {
-  width: 100%;
+  width: 90%;
   font-family: Raleway, sans serif;
-  margin-left: 30px;
+  margin-left: 40px;
 }
 
-p {
-  font-family: Raleway, sans serif;
-}
 /*Nav*/
 
 .m-nav__cssCheatSheet {
@@ -16,7 +13,7 @@ p {
   align-items: center;
   font-family: Monserrat, sans-serif;
   height: 100%;
-  width: 160px;
+  width: 10%;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -47,28 +44,49 @@ h2,
 h3,
 h4 {
   font-family: Montserrat, sans serif;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 20x;
+  margin-bottom: 10px;
 }
 
 h1 {
   font-size: 40px;
   color: #01676b;
+  margin-top: 30px;
+  margin-left: 10px;
 }
 
 .a-title__CSS {
   background-color: #ca2e55;
   color: #f3e8ee;
-  padding: 8px;
+  padding: 10px;
 }
 
 .m-title__CSS {
-  margin-top: 40px;
-  margin-left: 20px;
-  padding: 20px;
+  height: 200px;
+  margin-top: 100px;
+  background-color: #f3e8ee;
+  width: 900px;
+}
+
+/*Bases CSS*/
+
+.o-selecteurs {
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+  flex-wrap: wrap;
 }
 
 /*Fonts & style*/
+
+p {
+  font-family: Raleway, sans serif;
+}
+
+pre {
+  white-space: pre-wrap;
+  font-weight: bold;
+}
 
 .a-fontStyle_fontFamily {
   font-family: Montserrat, sans cursif;

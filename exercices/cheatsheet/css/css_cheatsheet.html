@@ -9,27 +9,30 @@
   </head>
   <body onLoad="encodePreElements()">
     <nav class="m-nav__cssCheatSheet">
-      <a href="#o-home">Home</a>
-      <a href="#o-cssBase">Bases</a>
-      <a href="#o-selecteurs">Sélecteurs</a>
-      <a href="#o-fontsStyle">Fonts & style</a>
-      <a href="#o-imagesBackgrounds">Images</a>
+      <a href="#a-home">Home</a>
+      <a href="#a-cssBase">Bases</a>
+      <a href="#a-selecteurs">Sélecteurs</a>
+      <a href="#a-fontsStyle">Fonts & style</a>
+      <a href="#a-imagesBackgrounds">Images</a>
     </nav>
     <div class="m-title__CSS">
-      <h1>Cheat Sheet : <span class="a-title__CSS">CSS</span></h1>
+      <h1 id="a-home">Cheat Sheet : <span class="a-title__CSS">CSS</span></h1>
     </div>
+    <div class="o-basesCSS">
       <h2>Bases</h2>
-      <div>
+      <div class="m-anatomy">
         <p>Anatomie d'une règle CSS</p>
         <img src="css-anatomy-mdn.svg" alt="anatomie de base d'une règle CSS" />
       </div>
-      <h2 id="o-selecteurs">Sélecteurs</h2>
+    </div>
+    <div class="o-selecteurs">
+      <h2>Sélecteurs</h2>
         <p>
           Nom de l'élément HTML sur lequel on veut appliquer la règle CSS. Pour en
           sélectionner plusieurs qui regroupent les mêmes propriétés, on utilise des
           ",".
         </p>
-        <h3 id="selecteurs_base">Basiques</h3>
+        <h3>Basiques</h3>
           <p><a href="https://developer.mozilla.org/fr/docs/Web/CSS/Selector_list">Documentation MDN</a></p>
           <h4 id="selecteurs_baseType">Sélecteur de type</h4>
           <ul>
@@ -48,7 +51,7 @@
             <li><pre>input[type="valeur"] {}</pre></li>
             <li><pre>p #attribut * {}</pre></li>
           </ul>
-        <h3 id="selecteurs_combinateurs">Combinateurs</h3>
+        <h3>Combinateurs</h3>
         <ul>
           <li>div + p {} permet de sélectionner les p qui suivent la div</li>
           <li>
@@ -66,7 +69,7 @@
             colonne col.
           </li>
         </ul>
-        <h3 id="selecteurs_pseudoElements">Pseudo-éléments</h3>
+        <h3>Pseudo-éléments</h3>
           <a href="https://developer.mozilla.org/fr/docs/Web/CSS/Pseudo-%C3%A9l%C3%A9ments">Documentation MDN</a>
           <p>Permet de mettre en forme seulement certains éléments du sélecteur.</p>
           <p>Syntaxe<pre>sélecteur ::pseudo-élément {propriété : valeur};</pre></p>
@@ -77,7 +80,7 @@
             <li><pre>p::first-line</pre></li>
             <li><pre>::placeholder</pre></li>
           </ul>
-        <h3 id="selecteurs_pseudoClasses">Pseudo-classes</h3>
+        <h3>Pseudo-classes</h3>
           <a href="https://developer.mozilla.org/fr/docs/Web/CSS/Pseudo-classes">Documentation MDN</a>
           <p>Permet de sélectionner les éléments selon l'état que l'on souhaite attribuer (quand on passe la souris dessus par exemple).</p>
           <ul>
@@ -97,7 +100,9 @@
             <li><pre>a:visited</pre></li>
             <li>etc.</li>
           </ul>
-      <h2 id="o-fontsStyle">Fonts & style</h2>
+    </div>
+    <div class="o-fontsStyle">
+      <h2 id="a-fontsStyle">Fonts & style</h2>
       <p>Propriétés des fonts sur la <a href="https://developer.mozilla.org/fr/docs/Web/CSS/font">MDN</a></p>
         <ul>
           <li class="a-fontStyle_fontFamily">font-family : Montserrat, sans cursif,</li>
@@ -115,7 +120,8 @@
           <li class="a-fontStyle_backgroundColor">background-color : lightblue</pre></li>
           <li>etc.</li>
         </ul>
-      <h2 id="o-imagesBackgrounds">Images</h2>
+    </div>
+      <h2 id="a-imagesBackgrounds">Images</h2>
       <ul>
         <li><pre></pre></li>
       </ul>
