@@ -101,6 +101,112 @@ h1 {
   width: 45%;
 }
 
+/*Fetch*/
+
+#main-container {
+  border: dotted 1px black;
+  width: 50%;
+  padding: 10px;
+}
+
+#quotes {
+  font-style: italic;
+}
+
+#author {
+  font-weight: 700;
+}
+
+.o-fetch {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+}
+
+.o-fetch__quote {
+  width: 40%;
+}
+
+.o-fetch__get {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+}
+
+.o-fetch__post {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+}
+
+.o-fetch__postCode {
+  width: 50%;
+}
+
+.commentForm {
+  width: 50%;
+}
+
+.myCommentForm {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 40%;
+}
+
+#submit-btn {
+  margin-top: 15px;
+  background-color: #01676b;
+  color: #dcf9e8;
+  font-weight: 700;
+  font-family: Raleway, sans serif;
+  width: 20%;
+}
+
+input,
+textarea {
+  background-color: #dcf9e8;
+  height: 30px;
+  margin: 10px;
+}
+
+textarea {
+  height: 80px;
+}
+
+.o-fetch__postCode {
+  width: 50%;
+}
+
+/*Fetch get*/
+
+.o-fetch__get {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+}
+
+#o-fetch__getExemple {
+  width: 40%;
+}
+
+.o-fetch__getCode {
+  width: 50%;
+}
+
+.auteurForm,
+.commentForm {
+  background-color: bisque;
+}
+
+.auteurForm {
+  width: fit-content;
+}
+
 /*Listes*/
 
 ul {
