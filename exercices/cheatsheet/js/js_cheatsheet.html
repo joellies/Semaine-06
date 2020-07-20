@@ -15,6 +15,7 @@
         <a href="#functions">Fonctions</a>
         <a href="#methods">Méthodes</a>
         <a href="#conditions">Conditions</a>
+        <a href="#boucles">Boucles</a>
       </nav>
     </header>
     <div class="m-title__js">
@@ -310,7 +311,7 @@
                   getComment();</pre>
                 </div>
               </div>
-              </div>
+            </div>
       <h2 id="conditions">Conditions</h2>
         <p>La documentation sur la <a href="">MDN</a></p>
         <p>Les conditions utilisent les opérateurs de comparaison <span class="important">(<, >, <=, >=, ===, !==...)</span> et les opérateurs logiques <span class="important">(&&, ||, !)</span> pour aider à prendre une décision en fonction des paramètres qui  sont fournis.</p>
@@ -337,9 +338,40 @@
               break;
           </pre>
         <pre>is nightTime ? console.log("Turn on the lights") : console.log("Turn off the lights");</pre>
-      <h2>Boucles</h2>
+      <h2 id="boucles">Boucles</h2>
         <p>La documentation sur la <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Boucles_et_it%C3%A9ration">MDN</a></p>
+      <div class="o-boucles">
+        <div class="o-for">
+          <h3>for</h3>
+          <pre>const fizzBuzzArray = [];
+            for (let i = 0; i <= 100; i++) {
+              console.log(i);
+              fizzBuzzArray.push(i);
+            }
+            console.log(fizzBuzzArray);</pre>
+        </div>
+        <div class="o-doWhile">
+          <h3>do... while</h3>
+        </div>
+        <div class="o-while">
+          <h3>while</h3>
+        </div>
+        <div class="o-forEach">
+          <h3>forEach</h3>
+            <pre>fizzBuzzArray.forEach(element => {
+              if (element % 3 === 0 && element % 5 === 0) {
+                console.log('FizzBuzz');
+              } else if (element % 3 === 0) {
+                console.log('Fizz');
+              } else if (element % 5 === 0) {
+                console.log('Buzz');
+              } else {
+                console.log(element);
+              }
+            });</pre>
+        </div>
 
+      </div>
   </body>
   <script src="script.js"></script>
 </html>
